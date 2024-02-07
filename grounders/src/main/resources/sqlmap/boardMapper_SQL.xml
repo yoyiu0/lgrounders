@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="grounders_board">   
+
+	<!-- =============================================  공지사항  ============================================= -->
+	<!-- ============== 공지사항리스트(메인페이지) ============== -->
+	<select id="noticeList" resultType="com.grounders.port.domain.BoardVO">
+	<![CDATA[
+		select *
+		from grounders_notice
+		order by seq desc
+		limit #{displayPost}, #{postNum}
+
+	]]>	
+	</select>
+	
+ 	<!-- 게시물 총 갯수 + 검색 적용 -->
+	<select id="noticeSearchCount" parameterType="hashMap" resultType="int">
+		<![CDATA[select count(seq) from grounders_notice]]>  
+		<if test='searchType.equals("title")'>WHERE title LIKE CONCAT('%', #{keyword}, '%')</if>
+		<if test='searchType.equals("content")'>WHERE content LIKE CONCAT('%', #{keyword}, '%')</if>
+		<if test='searchType.equals("title_content")'>WHERE title LIKE CONCAT('%', #{keyword}, '%') or content LIKE CONCAT('%', #{keyword}, '%')</if>
+	</select>
+	
+	<select id="noticeCount" resultType="int">
+		<![CDATA[
+		 select count(seq) from grounders_notice
+		]]>
+	</select>
+	
+	<select id="noticePageSearch" parameterType="hashMap" resultType="com.grounders.port.domain.BoardVO">
+		<![CDATA[ select seq, title, content, writeDate from grounders_notice]]>
+		<if test='searchType.equals("title")'>WHERE title LIKE CONCAT('%', #{keyword}, '%')</if>
+		<if test='searchType.equals("content")'>WHERE content LIKE CONCAT('%', #{keyword}, '%')</if>
+		<if test='searchType.equals("title_content")'>WHERE title LIKE CONCAT('%', #{keyword}, '%') or content LIKE CONCAT('%', #{keyword}, '%')</if>
+		order by seq desc limit #{displayPost}, #{postNum}
+	</select> 
+	
+	<!-- ============== 공지사항 글작성 ============== -->
+	<insert id="noticeWrite" parameterType="hashMap" useGeneratedKeys="true" keyProperty="seq">
+		<![CDATA[
+			insert into grounders_notice(seq, title, content, fileName, fileSize)
+			values (#{seq}, #{title}, #{content}, #{fileName}, #{fileSize})
+		]]>
+	</insert>
+	
+	<!-- ============== 공지사항 상세페이지 ============== -->
+	<select id="noticeView" parameterType="hashMap" resultType="com.grounders.port.domain.BoardVO">
+		<![CDATA[
+			select seq, title, content, fileName, fileSize, writeDate
+			from grounders_notice
+			where seq = #{seq}
+		]]>
+	</select>
+	
+	<!-- ============== 공지사항 업데이트 ============== -->
+   	<update id="noticeUpdate" parameterType="hashMap">
+		<![CDATA[
+         update grounders_notice
+         set 
+         title = #{title},
+         content = #{content}
+         where seq = #{seq}
+		]]>
+   	</update>
+	
+	<!-- ============== 공지사항 삭제 ============== -->
+	<delete id="noticeDelete" parameterType="hashMap">
+		<![CDATA[
+			delete from grounders_notice
+			where seq = #{seq}
+		]]>
+	</delete>
+	
+	<!-- =============================================  이벤트  ============================================= -->
+	
+	<select id="eventCount" resultType="int">
+		<![CDATA[
+		 select count(seq) from grounders_event
+		]]>
+	</select>
+	
+	<select id="eventPageSearch" parameterType="hashMap" resultType="com.grounders.port.domain.BoardVO">
+		<![CDATA[ select seq, title, content, writeDate from grounders_event]]>
+		<if test='searchType.equals("title")'>WHERE title LIKE CONCAT('%', #{keyword}, '%')</if>
+		<if test='searchType.equals("content")'>WHERE content LIKE CONCAT('%', #{keyword}, '%')</if>
+		<if test='searchType.equals("title_content")'>WHERE title LIKE CONCAT('%', #{keyword}, '%') or content LIKE CONCAT('%', #{keyword}, '%')</if>
+		order by seq desc limit #{displayPost}, #{postNum}
+	</select> 
+	
+	 <!-- 게시물 총 갯수 + 검색 적용 -->
+	<select id="eventSearchCount" parameterType="hashMap" resultType="int">
+		<![CDATA[select count(seq) from grounders_event]]>  
+		<if test='searchType.equals("title")'>WHERE title LIKE CONCAT('%', #{keyword}, '%')</if>
+		<if test='searchType.equals("content")'>WHERE content LIKE CONCAT('%', #{keyword}, '%')</if>
+		<if test='searchType.equals("title_content")'>WHERE title LIKE CONCAT('%', #{keyword}, '%') or content LIKE CONCAT('%', #{keyword}, '%')</if>
+	</select>
+	
+	<!-- ============== 이벤트 글작성 ============== -->
+	<insert id="eventwrite" parameterType="hashMap" useGeneratedKeys="true" keyProperty="seq">
+		<![CDATA[
+			insert into grounders_event(seq, title, content, fileName, fileSize)
+			values (#{seq}, #{title}, #{content}, #{fileName}, #{fileSize})
+		]]>
+	</insert>
+	
+	<!-- ============== 이벤트 상세페이지 ============== -->
+	<select id="eventview" parameterType="hashMap" resultType="com.grounders.port.domain.BoardVO">
+		<![CDATA[
+			select seq, title, content, fileName, fileSize, writeDate
+			from grounders_event
+			where seq = #{seq}
+		]]>
+	</select>
+		
+	<!-- ============== 이벤트 업데이트 ============== -->
+   	<update id="eventUpdate" parameterType="hashMap">
+      	<![CDATA[
+         	update grounders_event
+         	set 
+         	title = #{title},
+         	content = #{content}
+         	where seq = #{seq}
+      	]]>
+   	</update>
+	
+	<!-- ============== 공지사항 삭제 ============== -->
+	<delete id="eventDelete" parameterType="hashMap">
+		<![CDATA[
+			delete from grounders_event
+			where seq = #{seq}
+		]]>
+	</delete>
+	
+	<!-- =============================================  커뮤니티  ============================================= -->
+	
+	<insert id="boardWrite" parameterType="hashMap" useGeneratedKeys="true" keyProperty="seq">
+		<![CDATA[
+			insert into grounders_board(seq, title, id, boardPw, content, fileName, fileSize, viewCnt, likeCnt)
+			values (#{seq}, #{title}, #{id}, #{boardPw}, #{content}, #{fileName}, #{fileSize}, #{viewCnt}, #{likeCnt})
+		]]>
+	</insert>
+	
+	<!-- ============== 게시판리스트 ============== -->	
+	<!-- 게시물 총 갯수 + 검색 적용 -->
+	<select id="listSearchCount" parameterType="hashMap" resultType="int">
+		<![CDATA[select count(seq) from grounders_board]]>  
+		<if test='searchType.equals("title")'>WHERE title LIKE CONCAT('%', #{keyword}, '%')</if>
+		<if test='searchType.equals("content")'>WHERE content LIKE CONCAT('%', #{keyword}, '%')</if>
+		<if test='searchType.equals("title_content")'>WHERE title LIKE CONCAT('%', #{keyword}, '%') or content LIKE CONCAT('%', #{keyword}, '%')</if>
+	</select>
+	
+	<select id="listCount" resultType="int">
+		<![CDATA[
+		 select count(seq) from grounders_board
+		]]>
+	</select>
+	
+	<select id="listPageSearch" parameterType="hashMap" resultType="com.grounders.port.domain.BoardVO">
+		<![CDATA[
+			select seq, title, id, content, writeDate, viewCnt, likeCnt, IFNULL(mp_file.STORED_FILE_NAME, '') AS storedFileName 
+	  		  from grounders_board
+		 left join mp_file
+ 		 		on grounders_board.seq = mp_file.bno
+		]]>
+		<if test='searchType.equals("title")'>WHERE title LIKE CONCAT('%', #{keyword}, '%')</if>
+		<if test='searchType.equals("content")'>WHERE content LIKE CONCAT('%', #{keyword}, '%')</if>
+		<if test='searchType.equals("title_content")'>WHERE title LIKE CONCAT('%', #{keyword}, '%') or content LIKE CONCAT('%', #{keyword}, '%')</if>
+		order by seq desc limit #{displayPost}, #{postNum}
+	</select> 	
+	
+	<!-- ============== 자유게시판 상세페이지 ============== -->
+	<select id="boardview" parameterType="hashMap" resultType="com.grounders.port.domain.BoardVO">
+		<![CDATA[
+			select seq, title, content, id, writeDate, viewCnt
+			from grounders_board
+			where seq = #{seq}
+		]]>
+	</select>
+	
+	<update id="viewCntUpdate" parameterType="int">
+      <![CDATA[
+         update grounders_board 
+         set viewCnt = viewCnt +1 
+         where seq = #{seq}
+      ]]>
+   </update>
+	
+	
+	<!-- 자유게시판 수정 -->
+   <update id="boardUpdate" parameterType="hashMap">
+      <![CDATA[
+         update grounders_board
+         set 
+         title = #{title},
+         content = #{content}
+          where seq = #{seq}
+      ]]>
+   </update>
+      
+   <!-- 자유게시판 삭제 -->
+   <delete id="boardDelete" parameterType="hashMap">
+      <![CDATA[
+         delete from grounders_board
+         where seq = #{seq}
+      ]]>
+   </delete>
+   		
+	<insert id="insertFile" parameterType="hashMap" useGeneratedKeys="true" keyProperty="FILE_NO">
+		<![CDATA[
+			INSERT INTO MP_FILE(
+			FILE_NO,
+			BNO,
+			ORG_FILE_NAME,
+			STORED_FILE_NAME,
+			FILE_SIZE
+			)VALUES(
+			null,
+			#{BNO},
+			#{ORG_FILE_NAME},
+			#{STORED_FILE_NAME},
+			#{FILE_SIZE}
+			)
+		]]>
+	</insert>
+	
+	<!-- 첨부파일 조회 -->
+	<select id="selectFileList" parameterType="int" resultType="hashMap">
+		SELECT FILE_NO,
+			   ORG_FILE_NAME,
+			   STORED_FILE_NAME,
+			   ROUND(FILE_SIZE/1024,1) AS FILE_SIZE
+		  FROM MP_FILE
+		 WHERE BNO = #{seq}
+		   AND DEL_GB = 'N'
+	</select>	
+	
+	<!-- 첨부파일 삭제 -->
+   <delete id="deleteFile" parameterType="int">
+      <![CDATA[
+         delete from MP_FILE
+         where BNO = #{seq}
+      ]]>
+   </delete>								
+	
+	<!-- 커뮤니티 조회수 많은 게시물 4개 보여주기 -->
+	<select id="boardListView" resultType="hashMap">
+		<![CDATA[
+		  	select seq, title, id, content, writeDate, viewCnt, likeCnt, IFNULL(mp_file.STORED_FILE_NAME, '') AS STORED_FILE_NAME
+		  	  from grounders_board
+		 left join mp_file
+ 		 		on grounders_board.seq = mp_file.BNO		  	  
+		  order by viewCnt desc 
+			 limit 4	 
+		]]>			   
+	</select>	
+		
+</mapper>
+
