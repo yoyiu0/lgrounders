@@ -1,0 +1,671 @@
+p {
+  color: #393846;
+}
+
+a {
+  color: #252525;
+}
+
+img {
+	width: 100%;
+}
+
+html body .main-title .my-5 h1 {
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+}
+html body .main-title .my-5 .fs-3 {
+  font-size: 2rem;
+}
+html body .main-title .my-5 div .p-2 {
+  padding: 0.5rem 3.1rem !important;
+}
+html body .py-6 {
+  padding-top: 6rem !important;
+  padding-bottom: 2.1rem;
+}
+html body .py-6 .my-5 {
+  margin-top: 0 !important;
+  margin-bottom: 1.5rem !important;
+}
+html body .py-6 .my-5 .row1 {
+  --bs-gutter-x: 4rem;
+}
+html body .py-6 .my-5 .row1 .gameImg {
+  height: 30.25rem;
+  margin-bottom: 1.3rem;
+}
+html body .py-6 .my-5 .row1 .gameImg div {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+html body .py-6 .my-5 .row1 div h2 {
+  margin-bottom: 1.3rem !important;
+}
+html body .py-6 .my-5 .row1 div hr {
+  margin: 1rem 0;
+  margin-bottom: 1.8rem;
+  border: solid 1px #838383;
+}
+html body .py-6 .my-5 .row1 div .container1 {
+  --bs-gutter-x: 3.24rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+html body .py-6 .my-5 .row1 div .container1 div {
+  width: 100%;
+}
+html body .py-6 .my-5 .row1 div .container1 div div {
+  position: relative;
+}
+html body .py-6 .my-5 .row1 div .container1 div div .green-text {
+  color: #09847F;
+}
+html body .py-6 .my-5 .row1 div .container1 div div .lead {
+  font-size: 1rem;
+  font-weight: 600;
+}
+html body .py-6 .my-5 .row1 div .container1 div div .textEnd {
+  margin-left: auto;
+}
+html body .py-6 .my-5 .row1 div .container1 div div .textW {
+  width: 10%;
+}
+html body .py-6 .my-5 .row1 div .container1 .p-3 {
+  padding: 0 !important;
+}
+html body .order-tab div .tab {
+  background: linear-gradient(#ffffff 69%, #F5F4F9 31%);
+}
+html body .order-tab div .order-pad {
+  padding: 3.25rem 2.5rem;
+  border-radius: 30px;
+  border: 1px solid #757575;
+}
+html body .order-tab div .order-pad .col-9 {
+  width: 100%;
+}
+html body .order-tab div .order-pad div .order-c {
+  width: 100%;
+  margin-right: 4rem;
+}
+html body .order-tab div .order-pad div .order-c div {
+  text-align: center;
+}
+html body .order-tab div .order-pad div .order-c div .mini-title {
+  font-size: 1rem;
+  padding: 0.75rem 0;
+  background-color: #F3F3F3;
+  border-radius: 1.8rem;
+  margin-bottom: 2.1rem;
+  position: relative;
+}
+html body .order-tab div .order-pad div .order-c div .mini-title p {
+  margin-bottom: 0;
+  color: #757575;
+}
+html body .order-tab div .order-pad div .order-c div .place {
+  position: relative;
+  width: 100%;
+}
+html body .order-tab div .order-pad div .order-c div .place .textPlace {
+  position: absolute;
+  width: 100%;
+}
+html body .order-tab div .order-pad div .order-c div .place .textPlace .bleacher {
+  margin-top: 2.25rem;
+  width: 100%;
+}
+html body .order-tab div .order-pad div .order-c div .place .textPlace .bleacher p {
+  text-align: center;
+}
+html body .order-tab div .order-pad div .order-c div .place .textPlace .base {
+  display: flex;
+  width: 264px;
+  margin: 3rem auto;
+}
+html body .order-tab div .order-pad div .order-c div .place .textPlace .base .base3 {
+  margin-right: auto;
+  margin-left: 2.5rem;
+}
+html body .order-tab div .order-pad div .order-c div .place .textPlace .base .base1 {
+  margin-left: auto;
+  padding-right: 1.9rem;
+}
+html body .order-tab div .order-pad div .order-c div .place .textPlace div p {
+  color: #585858;
+  font-weight: 600;
+  font-size: 20px;
+}
+html body .order-tab div .order-pad div .order-c div .place .placeImg {
+  width: 13.6rem;
+  height: auto;
+  margin-bottom: 1.3rem;
+}
+html body .order-tab div .order-pad div .order-c div .place .placeImg div {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+html body .order-tab div .order-pad div .order-c div .baseSub {
+  width: 100%;
+}
+html body .order-tab div .order-pad div .order-c div .baseSub p {
+  font-size: 1rem;
+  color: #757575;
+  font-weight: 500;
+}
+html body .order-tab div .order-pad div .col-lg-8 {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+html body .order-tab div .order-pad div .col-lg-8 .PlaceDate {
+  display: flex;
+  margin-top: 0.75rem;
+  justify-content: space-evenly;
+}
+html body .order-tab div .order-pad div .col-lg-8 .PlaceDate p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+html body .order-tab div .order-pad div .col-lg-8 .PlaceDate .fBold {
+  font-weight: 800;
+  margin-right: 0.6rem;
+}
+html body .order-tab div .order-pad div .col-lg-8 .order-button button {
+  border: 2px solid #D9D9D9;
+  border-radius: 30px;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.68rem 0;
+}
+html body .order-tab div .order-pad div .col-lg-8 .order-button button p {
+  margin: 0;
+  font-size: 1rem;
+  color: #757575;
+}
+html body .order-tab div .order-pad div .col-lg-8 .order-button button .SeatB {
+  margin-right: 0.5rem;
+  font-weight: 1000;
+}
+html body .order-tab div .order-pad div .col-lg-8 .order-button button:hover {
+  border: 2px solid #09847f;
+  background-color: #09847F;
+}
+html body .order-tab div .order-pad div .col-lg-8 .order-button button:hover p {
+  color: #fff;
+}
+html body .order-tab div .order-pad div .col-lg-8 .baseSub2 p {
+  font-size: 1rem;
+  color: #757575;
+  font-weight: 500;
+}
+html body .order-tab div .order-pad .col-lg-3 {
+  width: 100%;
+  height: 100%;
+  margin-top: 3.12rem;
+  text-align: left;
+}
+html body .order-tab div .order-pad .col-lg-3 .lead {
+  font-size: 1rem;
+  color: #09847F;
+  font-weight: 600;
+}
+html body .order-tab div .order-pad .col-lg-3 div .second {
+  margin-left: auto;
+}
+html body .order-tab div .order-pad .col-lg-3 div div {
+  justify-content: space-between;
+}
+html body .order-tab div .order-pad .col-lg-3 div div .arenaT {
+  font-weight: 600;
+  font-size: 1rem;
+}
+html body .order-tab div .order-pad .col-lg-3 div div .arenaS {
+  color: #D9D9D9;
+}
+html body .order-tab div .order-pad .col-lg-3 div {
+  justify-content: space-between;
+}
+html body .order-tab div .order-pad .col-lg-3 div p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+html body .order-tab div div .order-pad {
+  padding: 3.25rem 2.5rem;
+  border-radius: 30px;
+  border: 1px solid #757575;
+}
+html body .order-tab div div .col-9 {
+  width: 100%;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table {
+  width: 100%;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr {
+  position: relative;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr .marginR {
+  width: 15%;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr td div {
+  font-size: 0.9rem;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr td .frontS {
+  position: absolute;
+  color: #09847F;
+  font-weight: 800;
+  top: 5%;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr td .middleS {
+  position: absolute;
+  color: #B4613C;
+  font-weight: 800;
+  top: 5%;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr td .backS {
+  position: absolute;
+  color: #09847F;
+  font-weight: 800;
+  top: 5%;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr td input[type=checkbox] {
+  display: none;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr td input[type=checkbox] + label {
+  background-color: #fff;
+  border: solid 2px #B4613C;
+  border-radius: 5px;
+  height: 1.56rem;
+  width: 1.56rem;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr td input[type=checkbox] + label:hover, html body .order-tab div div .col-9 .col-4 div .text-center table tr td input[type=checkbox] + label.active {
+  background-color: #B4613C;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr td input[type=checkbox] + label.disabled {
+  cursor: default;
+  border: none;
+  background-color: #CDD7D6;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr td input[type=checkbox] {
+  display: none;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr td input[type=checkbox] + label.greenChk {
+  background-color: #fff;
+  border: solid 2px #09847F;
+  border-radius: 5px;
+  height: 1.56rem;
+  width: 1.56rem;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr td input[type=checkbox] + label.greenChk:hover, html body .order-tab div div .col-9 .col-4 div .text-center table tr td input[type=checkbox] + label.greenChk.active {
+  background-color: #09847F;
+}
+html body .order-tab div div .col-9 .col-4 div .text-center table tr td input[type=checkbox] + label.greenChk.disabled {
+  cursor: default;
+  border: none;
+  background-color: #CDD7D6;
+}
+html body .order-tab div div .col-9 .col-4 div p {
+  font-size: 1rem;
+  color: #757575;
+  font-weight: 500;
+}
+html body .order-tab div div .col-9 .col-lg-8 .PlaceDate p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+html body .order-tab div div .col-9 .col-lg-8 .PlaceDate .fBold {
+  font-weight: 800;
+  margin-right: 0.6rem;
+}
+html body .order-tab div div .col-9 .col-lg-8 .order-button .btnF {
+  border: 2px solid #09847F;
+}
+html body .order-tab div div .col-9 .col-lg-8 .order-button .btnF p {
+  color: #09847F;
+}
+html body .order-tab div div .col-9 .col-lg-8 .order-button .btnM {
+  border: 2px solid #B4613C;
+}
+html body .order-tab div div .col-9 .col-lg-8 .order-button .btnM p {
+  color: #B4613C;
+}
+html body .order-tab div div .col-9 .col-lg-8 .order-button .btnM:hover {
+  border: 2px solid #B4613C;
+  background-color: #B4613C;
+}
+html body .order-tab div div .col-9 .col-lg-8 .order-button .btnB {
+  border: 2px solid #09847F;
+}
+html body .order-tab div div .col-9 .col-lg-8 .order-button .btnB p {
+  color: #09847F;
+}
+html body .order-tab div div .col-9 .col-lg-8 .order-button button div {
+  justify-content: center;
+}
+html body .order-tab div div .col-9 .col-lg-8 .order-button button div .fw-bolder {
+  margin-right: 0.5rem;
+}
+html body .order-tab div div .col-9 .col-lg-8 .order-button button div p {
+  margin: 0;
+  font-size: 1rem;
+  color: #757575;
+}
+html body .order-tab div div .col-9 .col-lg-8 .order-button button:hover {
+  border: 2px solid #09847f;
+  background-color: #09847F;
+}
+html body .order-tab div div .col-9 .col-lg-8 .order-button button:hover p {
+  color: #fff;
+}
+html body section div .tab2 {
+  background: linear-gradient(#ffffff 61%, #F5F4F9 39%);
+}
+html body section div div div .custom-tab {
+  justify-content: start;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 30px;
+}
+html body section div div div .custom-tab li {
+  width: 18rem;
+  position: relative;
+}
+html body section div div div .custom-tab li a {
+  color: #757575 !important;
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1.5rem;
+  position: relative;
+}
+html body section div div div .custom-tab li a:hover :before {
+  width: 70%;
+}
+html body section div div div .custom-tab li a:before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1px;
+  content: "";
+  background: #393846;
+  width: 0;
+  height: 3px;
+  transition: all 0.4s;
+}
+html body section div div div .custom-tab li a.active {
+  color: #393846 !important;
+  font-weight: 600;
+}
+html body section div div div .custom-tab li a.active:before {
+  width: 100%;
+}
+html body section div div div div div div table tbody tr td div h3 {
+  color: #393846;
+  margin-bottom: 1.4rem !important;
+  font-weight: 600;
+}
+html body section div div div div div div table tbody tr td div p {
+  font-size: 1.1rem;
+  line-height: 180%;
+  margin-bottom: 3rem;
+}
+html body section div div div div div div table tbody tr td div .p1 {
+  margin-bottom: 1.5rem;
+}
+html body section div div div div div div table tbody tr td div .p2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+html body section div div div div div table tbody tr td div h3 {
+  color: #393846;
+  margin-bottom: 2.3rem !important;
+  font-weight: 600;
+}
+html body section div div div div div table tbody tr td div table tbody tr .table-back {
+  background-color: #CDD7D6;
+}
+html body section div div div div div table tbody tr td div table tbody tr td {
+  width: 9%;
+}
+html body section div div div div div table tbody tr td div table tbody tr td .dosuan {
+  margin-top: 3rem;
+}
+html body section div div div div div table tbody tr td div table tbody tr td p {
+  padding: 1.5rem 0;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  margin-left: 1.6rem;
+}
+html body section div div div div div table tbody tr td div table tbody tr td .td-p {
+  font-weight: bolder;
+}
+html body section div div div div div table tbody tr td div table tbody tr td .table {
+  width: 95%;
+  margin-left: 1.6rem;
+}
+html body section div div div div div table tbody tr td div table tbody tr td .table tbody tr .table-back2 {
+  background-color: #D7EBEA;
+}
+html body section div div div div div table tbody tr td div table tbody tr td .table tbody tr td {
+  text-align: center;
+}
+html body section div div div div div table tbody tr td div table tbody tr td .table tbody tr td p {
+  padding: 1.1rem 0;
+}
+html body section div div div div div table tbody tr td div table tbody tr td .table tbody tr td .taj {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  html body .py-6 {
+    padding-bottom: 0;
+  }
+  html body .py-6 .my-5 .row1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  html body .py-6 .my-5 .row1 .col-xl-4 {
+    width: 40%;
+  }
+  html body .py-6 .my-5 .row1 .gameImg {
+    height: 21rem;
+    margin-bottom: 0;
+  }
+  html body .py-6 .my-5 .row1 .col-xl-8 {
+    width: 50%;
+  }
+  html body .py-6 .my-5 .row1 .col-xl-8 .container1 hr {
+    display: none;
+  }
+  html body .py-6 .my-5 .row1 .col-xl-8 .container1 div .textW {
+    width: 15%;
+  }
+  html body .order-tab div .tab {
+    background: linear-gradient(#ffffff 64%, #F5F4F9 36%);
+  }
+  html body .order-tab div .order-pad .col-9 {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  html body .order-tab div .order-pad .col-9 .order-c {
+    width: 35%;
+    margin-right: 1rem;
+  }
+  html body .order-tab div .order-pad .col-9 .order-c .place .textPlace .base {
+    width: 230px;
+  }
+  html body .order-tab div .order-pad .col-9 .order-c .place .textPlace .base .base3 {
+    margin-left: 1.5rem;
+  }
+  html body .order-tab div .order-pad .col-9 .col-lg-8 {
+    width: 50%;
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+  html body .order-tab div .order-pad .col-9 .col-lg-8 .PlaceDate {
+    margin-bottom: 2.5rem;
+  }
+  html body .order-tab div .order-pad .col-lg-3 .midFlex {
+    display: flex;
+  }
+  html body .order-tab div .order-pad .col-lg-3 .midFlex div {
+    width: 45%;
+  }
+  html body .order-tab div .order-pad .col-lg-3 div {
+    align-items: center;
+  }
+  html body .order-tab div .order-pad .col-lg-3 div {
+    display: flex;
+  }
+  html body .order-tab div .order-pad .col-lg-3 div div {
+    width: 80%;
+  }
+  html body .order-tab .container .tab2 {
+    background: linear-gradient(#ffffff 53%, #F5F4F9 47%);
+  }
+  html body .order-tab .container div .col-9 .order-c {
+    width: 45%;
+  }
+  html body .order-tab .container div .col-9 .order2 div .mini-title {
+    margin-bottom: 4.3rem;
+  }
+  html body .order-tab .container div .col-9 .order2 div .text-center table tr {
+    margin-bottom: 10px;
+  }
+  html body .order-tab .container div .col-9 .order2 .marginB {
+    margin-top: 1.12rem;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-12 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 1.3rem !important;
+  }
+  .col-xl-4 {
+    width: 32% !important;
+    height: 34.3rem;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .col-xl-6 {
+    width: 73% !important;
+  }
+  .col-xl-8 {
+    width: 64% !important;
+    padding-right: 0 !important;
+    padding-left: calc(var(--bs-gutter-x) * 1.2) !important;
+  }
+  h2 {
+    font-size: 1.68rem !important;
+  }
+}
+@media (min-width: 1280px) {
+  html body .py-6 {
+    padding-bottom: 2.1rem;
+  }
+  html body .py-6 .my-5 .row1 {
+    --bs-gutter-x: 3.2rem;
+  }
+  html body .py-6 .my-5 .row1 .gameImg {
+    height: 30.25rem;
+  }
+  html body .py-6 .my-5 div .col-xl-8 .container1 {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 70%;
+    margin-left: 0;
+  }
+  html body .py-6 .my-5 div .col-xl-8 .container1 div {
+    width: 50%;
+    position: relative;
+  }
+  html body .py-6 .my-5 div .col-xl-8 .container1 div div {
+    width: 100%;
+  }
+  html body .py-6 .my-5 div .col-xl-8 .container1 div div p {
+    font-size: 1.2rem;
+  }
+  html body .py-6 .my-5 div .col-xl-8 .container1 .p-3 {
+    margin-left: 30px;
+  }
+  html body .order-tab div .tab {
+    background: linear-gradient(90deg, #ffffff 69%, #F5F4F9 31%);
+  }
+  html body .order-tab div .order-pad {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  html body .order-tab div .order-pad .col-9 {
+    width: 75%;
+  }
+  html body .order-tab div .order-pad .col-9 .order-c {
+    margin-right: 2.5rem;
+    width: 35%;
+  }
+  html body .order-tab div .order-pad .col-9 .order-c div .mini-title {
+    margin-bottom: 1.5rem;
+  }
+  html body .order-tab div .order-pad .col-9 .col-lg-8 {
+    margin-left: 0;
+    width: 50%;
+  }
+  html body .order-tab div .order-pad .col-9 .col-lg-8 .PlaceDate {
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  html body .order-tab div .order-pad .col-lg-3 {
+    width: 28%;
+  }
+  html body .order-tab div .order-pad .col-lg-3 .midFlex {
+    display: block;
+  }
+  html body .order-tab div .order-pad .col-lg-3 .midFlex .second {
+    margin-left: 0;
+  }
+  html body .order-tab div .order-pad .col-lg-3 .midFlex div {
+    width: 100%;
+    justify-content: space-between;
+  }
+  html body .order-tab div .order-pad .col-lg-3 div .pw1 {
+    width: 32%;
+    margin-top: 15px;
+  }
+  html body .order-tab div .order-pad .col-lg-3 div .pw {
+    width: 23%;
+    margin-top: 15px;
+  }
+  html body .order-tab .container .tab2 {
+    background: linear-gradient(90deg, #ffffff 69%, #F5F4F9 31%);
+  }
+  html body .order-tab .container div .col-9 {
+    width: 75%;
+  }
+  html body .order-tab .container div .col-9 .order-c {
+    margin-right: 2.5rem;
+    width: 35%;
+  }
+  html body .order-tab .container div .col-9 .order-c .textB {
+    margin-top: 32px;
+  }
+  html body .order-tab .container div .col-9 .col-4 div .text-center table {
+    margin-top: 53px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1240px !important;
+    --bs-gutter-x: 3.24rem !important;
+    padding-right: calc(var(--bs-gutter-x) * 0.1) !important;
+    padding-left: calc(var(--bs-gutter-x) * 0.1) !important;
+  }
+}/*# sourceMappingURL=order.css.map */

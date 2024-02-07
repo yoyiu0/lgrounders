@@ -1,0 +1,569 @@
+@charset "UTF-8";
+@media (max-width: 1960px) {
+  /* main */
+  .mainSec {
+    max-width: 1400px;
+    margin-bottom: 17rem;
+  }
+  .swiper {
+    max-width: 1400px;
+    height: 500px;
+    border-radius: 30px;
+  }
+  .firstSec {
+    margin-bottom: 2rem;
+  }
+  .firstSec .main .swiper-wrapper .swiper-slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .firstSec .main .mainS1{
+  	background-image: url("../img/main.jpg");
+  }
+  .firstSec .main .mainS2{
+  	background-image: url("../img/main2.jpg");
+  }
+  .firstSec .main .swiper-pagination-bullet-active {
+    background-color: #393846;
+  }
+  .thirdSec {
+    background-color: #393846;
+    color: #fff;
+    max-width: none;
+    background-image: url(../img/main_back.png);
+    background-repeat: no-repeat;
+    background-position: -20px 400px;
+    margin-bottom: 10rem;
+  }
+  .thirdSec .contents {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding-bottom: 10rem;
+  }
+  .thirdSec .rightBanner {
+    margin-top: 300px;
+    margin-left: 150px;
+    height: 1000px;
+  }
+  .thirdSec .rightBanner .game {
+    width: 650px;
+    height: 300px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    background-color: #fff;
+    color: #353535;
+    /*overflow: hidden;*/
+  }
+  .thirdSec .rightBanner .game .gameImg {
+    position: relative;
+    top: -3px;
+    left: -5px;
+    width: 220px;
+    height: 304px;
+    border-radius: 30px 0 0 30px;
+    background: linear-gradient(to top, #01183E, #002561 95%);
+  }
+  .thirdSec .rightBanner .game .gameImg img {
+    position: relative;
+    top: 25%;
+    left: 13%;
+    width: 70%;
+    height: 50%;
+  }
+  .thirdSec .rightBanner .game .gameInfo {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    width: 400px;
+    height: 100%;
+  }
+  .thirdSec .rightBanner .game .gameInfo > span {
+    border: 1px solid #09847f;
+    color: #09847f;
+    border-radius: 30px;
+    padding: 0.3rem 0.7rem;
+    font-family: "NanumSquareExtraBold";
+  }
+  .thirdSec .rightBanner .game .gameInfo p {
+    width: 80%;
+    height: 100%;
+    margin-top: 0.8rem;
+  }
+  .thirdSec .rightBanner .game .gameInfo p i {
+    color: #09847f;
+    font-size: 30px;
+    font-family: "NanumSquareExtraBold";
+  }
+  .thirdSec .rightBanner .game .gameInfo p b {
+    font-size: 23px;
+    font-family: "NanumSquareExtraBold";
+    white-space: pre-wrap;
+  }
+  .thirdSec .rightBanner .game .gameInfo p span:last-child {
+    color: #757575;
+  }
+  body {
+    font-family: "NanumSquare";
+    white-space: nowrap;
+  }
+  body .cbtn {
+    border-radius: 30px !important;
+  }
+  body li {
+    list-style: none;
+  }
+  body a {
+    display: inline-block;
+    color: #393846;
+    text-decoration: none;
+  }
+  body img {
+    width: 100%;
+    height: 100%;
+  }
+  body i, body big {
+    font-style: normal;
+  }
+  body .t-58 {
+    font-size: 58px;
+  }
+  body .t-32 {
+    font-size: 32px;
+  }
+  body .t-25 {
+    font-size: 25px;
+  }
+  body .t-24 {
+    font-size: 24px;
+  }
+  body .t-22 {
+    font-size: 22px;
+  }
+  body .t-20 {
+    font-size: 20px;
+  }
+  body .t-18 {
+    font-size: 18px;
+  }
+  body .titleText {
+    margin-left: 2rem;
+    margin-top: 6rem;
+  }
+  body .titleText p {
+    font-size: 23px;
+  }
+  body .titleText h3 {
+    font-size: 32px;
+    margin-bottom: 4rem;
+  }
+  body .subSec {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  body .secondSec {
+    max-width: 1400px;
+    height: 700px;
+    margin-top: 4rem;
+    margin-bottom: 20rem;
+  }
+  body .secondSec .parents {
+    border: 1px solid #383838;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 3rem 2rem;
+  }
+  body .secondSec .parents::after {
+    content: "";
+    background-color: #ccc;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 250px;
+  }
+  body .secondSec .parents .child {
+    display: flex;
+    width: 100%;
+  }
+  body .secondSec .parents .child .text-group {
+    width: 200px;
+  }
+  body .secondSec .parents .child .text-group h5 {
+    color: #FF856A;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  body .secondSec .parents .child .text-group p {
+    color: #757575;
+    font-size: 20px;
+  }
+  body .secondSec .parents .child1 {
+    position: absolute;
+  }
+  body .secondSec .parents .child1 .date {
+    background-color: #F8F8F8;
+    width: 1100px;
+    height: 130px;
+    border-radius: 100px;
+    padding: 0px 100px;
+    padding-top: 30px;
+  }
+  body .secondSec .parents .child1 .date li {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #bbb;
+    width: 20px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  body .secondSec .parents .child1 .date li span {
+    padding: 0.2rem 0.3rem;
+  }
+  body .secondSec .parents .child1 .date li:first-child {
+    color: #FF856A;
+  }
+  body .secondSec .parents .child1 .date li:first-child input[type=checkbox] {
+    display: none;
+  }
+  body .secondSec .parents .child1 .date li:first-child label {
+    border: none;
+    color: #FF856A;
+    cursor: pointer;
+    padding: 0.2rem 0.3rem;
+  }
+  body .secondSec .parents .child1 .date li:first-child label.active {
+    background-color: #333;
+    border-radius: 100%;
+  }
+  body .secondSec .parents .child1 .date li:last-child {
+    color: #1657B9;
+  }
+  body .secondSec .parents .child1 .date li:last-child span {
+    color: #bbb;
+  }
+  body .secondSec .parents .child2 {
+    position: absolute;
+    bottom: 60px;
+  }
+  body .secondSec .parents .child2 .game-group .game {
+    display: flex;
+    margin: 0 auto 1rem auto;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    width: 1100px;
+    height: 150px;
+    padding: 0rem 5rem;
+    box-shadow: 5px 5px 4px #eee;
+  }
+  body .secondSec .parents .child2 .game-group .game .gameInfo {
+    display: flex;
+  }
+  body .secondSec .parents .child2 .game-group .game .gameInfo .gameImg {
+    width: 185px;
+    height: 78px;
+    margin-right: 2rem;
+  }
+  body .secondSec .parents .child2 .game-group .game .gameInfo .dvsl {
+    width: 193px;
+    height: 78px;
+  }
+  body .secondSec .parents .child2 .game-group .game .gameInfo p {
+    color: #757575;
+  }
+  body .secondSec .parents .child2 .game-group .game .gameInfo p b {
+    font-size: 20px;
+    color: #393846;
+  }
+  body .secondSec .parents .child2 .game-group .game .gameSd .gamebtn {
+    background-color: #09847f;
+    padding: 0.6rem 2.5rem;
+    color: #fff;
+    border:none;
+  }
+
+  body .fourthSec {
+    margin-bottom: 5rem;
+  }
+  body .fourthSec .club .swiper-slide {
+    width: 100px;
+    height: 300px;
+  }
+  body .fourthSec .club .swiper-slide .card {
+    position: absolute;
+    width: 280px;
+    height: 304px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px #bbb;
+  }
+  body .fourthSec .club .swiper-slide .card .club-img {
+    position: relative;
+    width: 150px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  body .fourthSec .club .swiper-slide .card .lg {
+    background-image: url(../img/lg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 10px;
+  }
+  body .fourthSec .club .swiper-slide .card .ktWiz {
+    background-image: url(../img/ktWiz.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  body .fourthSec .club .swiper-slide .card .kia {
+    background-image: url(../img/kia.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 23px;
+  }
+  body .fourthSec .club .swiper-slide .card .ssg {
+    background-image: url(../img/ssg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 13px;
+  }
+  body .fourthSec .club .swiper-slide .card .nc {
+    background-image: url(../img/nc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 20px;
+  }
+  body .fourthSec .club .swiper-slide .card .bears {
+    background-image: url(../img/bears.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 10px;
+  }
+  body .fourthSec .club .swiper-slide .card .card-body {
+    position: relative;
+    bottom: 0px;
+  }
+  body .fourthSec .club .swiper-pagination {
+    top: auto;
+    bottom: 140px;
+    display: block;
+    height: 2px;
+  }
+  body .fourthSec .club .swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: #5b5a6d;
+  }
+  body .fifthSec {
+    margin-bottom: 15rem;
+  }
+  body .fifthSec .bannerImg {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 1358px;
+  }
+  body .sixthSec {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+  }
+  body .sixthSec .notice .card {
+    width: 330px;
+    height: 272px;
+    border-radius: 15px;
+  }
+  body .sixthSec .notice .card .card-body {
+    position: relative;
+    padding: 2rem;
+  }
+  body .sixthSec .notice .card .card-body p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    cursor: pointer;
+  }
+  body .sixthSec .notice .card .card-body p:hover {
+    text-decoration: underline;
+  }
+  body .sixthSec .notice .card .card-body p:nth-child(2) {
+    margin-top: 2rem;
+  }
+  body .sixthSec .notice .card .card-body p:last-child {
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+  }
+  body .sixthSec .notice .swiper-pagination {
+    top: auto;
+    bottom: 140px;
+    display: block;
+    height: 2px;
+  }
+  body .sixthSec .notice .swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: #5b5a6d;
+  }
+}
+@media (max-width: 700px) {
+  body .secondSec {
+    height: 1100px;
+  }
+  body .secondSec .parents::after {
+    top: 240px;
+  }
+  body .secondSec .parents .child {
+    flex-flow: column;
+    left: 20px;
+  }
+  body .secondSec .parents .child .text-group {
+    width: auto;
+  }
+  body .secondSec .parents .child .text-group h5 {
+    font-size: 20px;
+  }
+  body .secondSec .parents .child .text-group p {
+    font-size: 16px;
+  }
+  body .secondSec .parents .child1 {
+    top: 30px;
+  }
+  body .secondSec .parents .child1 .date {
+    background-color: #F8F8F8;
+    width: 91%;
+    height: 90px;
+    border-radius: 100px;
+    padding: 0px 30px;
+    padding-top: 20px;
+  }
+  body .secondSec .parents .child1 .date li {
+    width: 20px;
+    font-size: 15px;
+  }
+  body .secondSec .parents .child2 {
+    top: 300px;
+  }
+  body .secondSec .parents .child2 .game-group .game {
+    position: relative;
+    margin: 0;
+    width: 89%;
+    height: 330px;
+    padding: 1rem;
+    display: block;
+  }
+  body .secondSec .parents .child2 .game-group .game .gameInfo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    flex-flow: column;
+  }
+  body .secondSec .parents .child2 .game-group .game .gameInfo .gameImg {
+    width: 150px;
+    height: 70px;
+  }
+  body .secondSec .parents .child2 .game-group .game .gameInfo .dvsl {
+    width: 160px;
+  }
+  body .secondSec .parents .child2 .game-group .game .gameInfo p {
+    margin-top: 2rem;
+    width: 250px;
+    height: 100px;
+    font-size: 14px;
+  }
+  body .secondSec .parents .child2 .game-group .game .gameInfo p b {
+    white-space: pre-wrap;
+    font-size: 17px;
+    margin: 0.4rem 0;
+  }
+  body .secondSec .parents .child2 .game-group .game .gameSd {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  body .secondSec .parents .child2 .game-group .game .gameSd .gamebtn {
+    text-align: center;
+    width: 270px;
+    margin-top: 4rem;
+    color: #fff;
+    font-size: 15px;
+    border:none;
+  }
+  body .secondSec .parents .child2 .game-group .g1 {
+    margin-bottom: 2rem;
+  }
+  body .thirdSec {
+    background-image: none;
+  }
+  body .thirdSec .rightBanner {
+    margin-top: 0;
+    margin-left: 0;
+    height: 750px;
+  }
+  body .thirdSec .rightBanner .game {
+    width: 100%;
+    height: 210px;
+  }
+  body .thirdSec .rightBanner .game .gameImg {
+    width: 70%;
+    height: 102%;
+  }
+  body .thirdSec .rightBanner .game .gameInfo {
+    margin: 1.2rem 1rem;
+    width: 100%;
+  }
+  body .thirdSec .rightBanner .game .gameInfo span {
+    font-size: 12px;
+  }
+  body .thirdSec .rightBanner .game .gameInfo p {
+    margin-top: 0.4rem;
+    width: 100%;
+  }
+  body .thirdSec .rightBanner .game .gameInfo p i {
+    font-size: 20px;
+    margin-bottom: 0.3rem;
+  }
+  body .thirdSec .rightBanner .game .gameInfo p b {
+    font-size: 16px;
+    margin-bottom: 0.3rem;
+  }
+  body .fourthSec .club .swiper-slide .card {
+    width: 210px;
+    height: 230px;
+  }
+  body .fourthSec .club .swiper-slide .card .club-img {
+    margin-top: 1.2rem;
+    width: 120px;
+    height: 130px;
+  }
+  body .fourthSec .club .swiper-slide .card .card-body {
+    bottom: 10px;
+  }
+  body .fourthSec .club .swiper-pagination {
+    bottom: 200px;
+  }
+  body .fifthSec {
+    max-width: 350px;
+  }
+  body .fifthSec .bannerImg {
+    max-width: 100%;
+  }
+  body .sixthSec .notice .swiper-slide .card {
+    width: 270px;
+    height: 200px;
+  }
+  body .sixthSec .notice .swiper-slide .card .card-body p {
+    font-size: 15px;
+  }
+  body .sixthSec .notice .swiper-slide .card .card-body p:first-child {
+    font-size: 19px;
+  }
+  body .sixthSec .notice .swiper-slide .card .card-body p:nth-child(2) {
+    margin-top: 1rem;
+  }
+  body .sixthSec .notice .swiper-slide .card .card-body p:last-child {
+    bottom: 27px;
+  }
+  body .sixthSec .notice .swiper-pagination {
+    bottom: 240px;
+  }
+}/*# sourceMappingURL=custom.css.map */
