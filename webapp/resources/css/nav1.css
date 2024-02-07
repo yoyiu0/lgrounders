@@ -1,0 +1,203 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'NanumSquare';
+}
+
+html body .main-title {
+  padding-top: 3.8rem !important;
+}
+html body .main-title .my-5 {
+  margin-top: 0 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+p {
+  color: #393846;
+}
+
+a {
+  color: #252525;
+}
+
+html body .main-navbar {
+  --bs-navbar-padding-y: 1.9rem !important;
+}
+html body .main-navbar .container .logo a {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .col-lg-12 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px !important;
+    --bs-gutter-x: 3.24rem !important;
+    padding-right: calc(var(--bs-gutter-x) * 0.1) !important;
+    padding-left: calc(var(--bs-gutter-x) * 0.1) !important;
+  }
+  html body nav {
+    --bsz-navbar-padding-y: 1.9rem !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent; /*배경 투명*/
+    z-index: 100;
+    height: 100px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html body nav.minimize {
+    background-color: #fff;
+  }
+  html body nav .container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5rem;
+    height: 80px;
+  }
+  html body nav .container .logo {
+    /* 접속한 장치의 가로길이를 100%로 보고 그 길이의 32%  */
+    /* 접속한 장치의 가로길이를 100%로 보고 그 길이의 32%  */
+    /* %단위는 부모객체(.center)기준임 */
+    /* 갤럭시21 : 421px */
+    margin-top: 6px;
+    width: 200px;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  html body nav .container .logo img {
+    display: none !important;
+  }
+  html body nav .container .logo a {
+    display: block !important;
+  }
+  html body nav .container div {
+    display: block;
+    position: relative;
+    right: auto;
+    left: auto;
+    top: auto;
+    z-index: 110;
+    height: 60px;
+    background-color: transparent;
+    border-top: none;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  html body nav .container div .navCenter {
+    margin-left: 50px;
+  }
+  html body nav .container div .endUl {
+    position: absolute;
+  }
+  html body nav .container div .mar {
+    padding-top: 35px;
+  }
+  html body nav .container div ul {
+    margin-left: 150px;
+    position: absolute;
+    justify-content: space-between;
+  }
+  html body nav .container div ul .end {
+    padding: 0;
+  }
+  html body nav .container div ul .end a {
+    color: #757575;
+  }
+  html body nav .container div ul .tog a {
+    padding-bottom: 35px;
+  }
+  html body nav .container div ul .tog .aTitle:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #09847f;
+    bottom: 0;
+    left: 50%;
+    transition: all 0.5s;
+  }
+  html body nav .container div ul .tog .aTitle:hover {
+    color: #09847f;
+    font-weight: 800;
+  }
+  html body nav .container div ul .tog .aTitle:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  html body nav .container div ul li {
+    position: relative;
+    padding: 0 25px;
+  }
+  html body nav .container div ul li:hover a {
+    color: #09847f;
+  }
+  html body nav .container div ul li a {
+    font-size: 17px;
+    font-weight: bold;
+    color: #393846;
+    /*padding-bottom: 2.2rem;*/
+  }
+  html body nav .container div ul li .sub {
+    /*margin-top : 100px;*/
+    position: absolute;
+    left: 248%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    /*  위아래 안쪽 여백 50px  */
+    padding: 40px 0;
+    /* 서브메뉴 영역 모두 겹침 */
+    margin-bottom: 5vw;
+    margin-bottom: 0;
+    height: auto;
+    width: 1000px;
+    flex-flow: row nowrap;
+  }
+  html body nav .container div ul li .sub li {
+    margin-bottom: 19px;
+  }
+  html body nav .container div ul li .sub li a {
+    color: #757575;
+    margin: 7px 0;
+    position: relative;
+    font-size: 17px;
+    text-align: left;
+    font-weight: 800;
+    padding: 0.5vw 0;
+    /* white-space:initial; */
+    background-color: transparent;
+  }
+  html body nav .container div ul li .sub li a:hover {
+    color: #09847f;
+    font-weight: 800;
+  }
+  html body nav .container div ul li .sub li a:hover:after {
+    width: 100%;
+  }
+  html body nav .container div ul .line {
+    border-left: 1px solid #c2c0c0;
+    height: 18px;
+    top: 13px;
+  }
+  html body nav .sub_bg {
+    border-top: 1px solid #ccc;
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    background-color: #fff;
+    top: 98px;
+    left: 0;
+    z-index: 90;
+    display: none;
+    transition: all 0.5s;
+  }
+}/*# sourceMappingURL=nav1.css.map */
